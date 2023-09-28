@@ -6,7 +6,7 @@ import { menuRouter } from "./Routers/menu.js";
 import { ordersRouter } from "./Routers/orders.js";
 import { sendMailRouter } from "./Routers/sendMail.js";
 
-// configure the envirenment
+// configure the envirenment.
 dotenv.config()
 
 //initialize express server framework
