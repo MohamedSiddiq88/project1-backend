@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "student-application",
+    "name": "project1-backend",
     "builds": [
         {
             "src": "./index.js",
