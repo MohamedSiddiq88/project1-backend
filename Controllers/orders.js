@@ -51,10 +51,10 @@ export function updateOrder(updatedData) {
     .findOneAndUpdate({ productId: updatedData.productId, userId:updatedData.userId }, { $set: {quantity:updatedData.quantity ,subTotal:updatedData.subTotal}});
 }
 
-export  function deleteOrder(id) {
-  return client
-    .db("project1")
-    .collection("order")
-    .findOneAndDelete({ _id: new ObjectId(id) }, { projection: { _id: 0 } });
-  
+export async function deleteOrder(id) {
+  const result = await client
+  .db("project1")
+  .collection("order")
+  .findOneAndDelete({ _id: new ObjectId(id)},{ projection: { _id: 0 }})
+  return result
 }
