@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/",(req,res)=>{
-    res.send("Welocome to Pizza World1")
+    res.send("Welocome to project1")
 })
 app.use("/menu",menuRouter);
 app.use("/users",usersRouter)   
